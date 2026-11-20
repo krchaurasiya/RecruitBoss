@@ -1,6 +1,9 @@
 # RecruitBoss
 
 A local AI hiring desk. It runs on your PC with your own Ollama model. Nothing is sent to the cloud.
+
+**Project page:** https://krchaurasiya.github.io/RecruitBoss/
+
 The whole hiring process, from the job brief to a new joiner's checklist, is run by a **LangGraph multi-agent system**.
 
 ## The flow
