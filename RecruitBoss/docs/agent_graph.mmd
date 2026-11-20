@@ -1,0 +1,53 @@
+---
+config:
+  flowchart:
+    curve: linear
+---
+graph TD;
+	__start__([<p>__start__</p>]):::first
+	supervisor(supervisor)
+	requisition(requisition)
+	sourcing(sourcing)
+	resume_intel(resume_intel)
+	matching(matching)
+	shortlisting(shortlisting)
+	interview_planning(interview_planning)
+	scheduling(scheduling)
+	evaluation(evaluation)
+	decision(decision)
+	offer_management(offer_management)
+	communication(communication)
+	onboarding(onboarding)
+	closure(closure)
+	__end__([<p>__end__</p>]):::last
+	__start__ --> supervisor;
+	closure --> supervisor;
+	communication --> supervisor;
+	decision --> supervisor;
+	evaluation --> supervisor;
+	interview_planning --> supervisor;
+	matching --> supervisor;
+	offer_management --> supervisor;
+	onboarding --> supervisor;
+	requisition --> supervisor;
+	resume_intel --> supervisor;
+	scheduling --> supervisor;
+	shortlisting --> supervisor;
+	sourcing --> supervisor;
+	supervisor -. &nbsp;END&nbsp; .-> __end__;
+	supervisor -.-> closure;
+	supervisor -.-> communication;
+	supervisor -.-> decision;
+	supervisor -.-> evaluation;
+	supervisor -.-> interview_planning;
+	supervisor -.-> matching;
+	supervisor -.-> offer_management;
+	supervisor -.-> onboarding;
+	supervisor -.-> requisition;
+	supervisor -.-> resume_intel;
+	supervisor -.-> scheduling;
+	supervisor -.-> shortlisting;
+	supervisor -.-> sourcing;
+	classDef default fill:#f2f0ff,line-height:1.2
+	classDef first fill-opacity:0
+	classDef last fill:#bfb6fc
